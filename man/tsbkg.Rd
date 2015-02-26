@@ -27,7 +27,10 @@ tsbkg(X, noAvg = 3, save = TRUE, file = 'tsbkg.txt', ...)
   Al Fischer
   al@uga.edu
 }
-
+\seealso{
+\code{\link{tssamp()}}
+\code{\link{wavcols()}}
+}
 \examples{
 data(ts)
 colnames(ts) <- c('Time', 'Wavelength (nm)', 'Intensity (mV)', 'SD (mV)', 'Type') # columns MUST have these names!

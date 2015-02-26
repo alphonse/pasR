@@ -25,6 +25,7 @@ Al Fischer <al@uga.edu>
 
 \seealso{
 \code{\link{tsbkg()}}
+\code{\link{wavcols()}}
 }
 
 \examples{
