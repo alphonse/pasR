@@ -30,11 +30,13 @@ Al Fischer <al@uga.edu>
 }
 
 \examples{
+data(cal)
 data(ts)
 data(power)
+cal <- calibrate(cal)
 colnames(ts) <- c('Time', 'Wavelength (nm)', 'Intensity (mV)', 'SD (mV)', 'Type')
-I0 <- tsbkg(ts, noAvg = 3)
-I  <- tsSamp(ts)
+I0 <- tsbkg(ts, noAvg = 3, save = FALSE)
+I  <- tsSamp(ts, save = FALSE)
 subtracted <- apply(mapply(I, I0[, 2:ncol(I0)], FUN = "-"), 1, na.omit)
 ts$`Absorbance (/Mm)` <- absorb(I = subtracted, P = c(power[, 2], 1131, 703), cal = cal)
 
