@@ -1,0 +1,11 @@
+Package: pasR
+Type: Package
+Title: Photoacoustic Spectroscopy Tools
+Version: 0.1
+Date: 2015-02-11
+Author: Al Fischer
+Maintainer: <al@uga.edu>
+Depends: magicaxis, ggplot2, manipulate
+Description: A package for working with photoacoustic data.
+License: GPL-3
+
