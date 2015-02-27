@@ -14,7 +14,8 @@ calibrate <- function(cal.file, ...) {
     xlab=expression(paste(alpha, ' (c',m^-1,')')),
     ylab="Normalized Signal (V/W)",
     xaxs='i',
-    yaxs='i'
+    yaxs='i',
+    ...
     )
   abline(cal)
   legend('topleft', 

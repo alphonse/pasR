@@ -12,7 +12,7 @@
 }
 \arguments{
   \item{cal.file}{A path to a \code{csv} file with the columns are \code{alpha} and \code{normalized} OR a data frame from the imported csv.}
-  \item{...}{Addtional arguments passed to \code{\link{read.csv}}}
+  \item{...}{Addtional arguments passed to \code{\link{read.csv()}} or \code{\link{magplot()}}}
 }
 \details{
   %%  ~~ If necessary, more details than the description above ~~
