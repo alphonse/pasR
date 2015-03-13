@@ -27,7 +27,7 @@ A character vector containing the colors to use.
 }
 
 \author{
-Al Fischer <al@uga.edu>}
+Al Fischer <al@uga.edu>
 }
 
 \examples{
