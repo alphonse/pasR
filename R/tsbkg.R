@@ -11,8 +11,8 @@ tsbkg <- function(X, noAvg = 3, save = TRUE, file = './proc/tsbkg.txt', ...) {
   colnames(I0) <- c('Wavelength (nm)', paste('I0-', 1:(ncol(I0)-1), sep = ''))
   
   if (save == TRUE) {
-    if (file == './proc/tsbkg.txt') {
-      write.table(I0, file='./proc/tsbkg.txt', row.names = FALSE, ...)
+    if (file == '.pas/proc/tsbkg.txt') {
+      write.table(I0, file='.pas/proc/tsbkg.txt', row.names = FALSE, ...)
     }
     else {
       write.table(I0, file = file, row.names = FALSE, ...)
