@@ -1,4 +1,4 @@
-plotts <- function(X, wavcols) {
+plotts <- function(X, wavcols = wavcols(X)) {
   manipulate(
     {
     tsplot <- ggplot(aes(x = Time, y = `Absorbance (/Mm)`), data = X) +
