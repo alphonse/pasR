@@ -7,7 +7,7 @@ absorb <- function(I, I0 = NULL, P, cal) {
   m <- coef(cal)[2]
   b <- coef(cal)[1]
   # calculate absorbance; for pre-subtracted data leave I0 blank
-  if (is.null(I0)) abs <- I/P
-  else abs <- (I-I0)/P
+  if (is.null(I0)) abs <- I/P[, 2]
+  else abs <- (I-I0)/P[, 2]
   (abs - b)/m
 }

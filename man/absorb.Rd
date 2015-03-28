@@ -13,7 +13,7 @@ Calculates the absorption of a sample give \eqn{I} and \eqn{I0} values from a ph
 \arguments{
   \item{I0}{A numeric vector of the background intensity}
   \item{I}{A numeric vector of the sample intensity}
-  \item{P}{A numeric vector of the illumination power}
+  \item{P}{A data frame with wavelength in column 1 and the illumination power in column 2}
   \item{cal}{An R function from the output of \code{calibrate}}
 }
   
